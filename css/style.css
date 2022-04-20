@@ -1,0 +1,136 @@
+header {
+    position: static;
+    width: 100%;
+}
+
+.bg-dark {
+    background-color: rgb(51, 58, 64) !important;
+}
+
+.header__nav__logo {
+    width: 140px;
+}
+
+.carousel__alto {
+    display: none;
+}
+
+.section__carousel__color {
+    display: none;
+}
+
+.section__texto {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    background-color: gray;
+    color: white;
+}
+
+.tarjetas {
+    flex-direction: column;
+}
+
+.dividida {
+    display: flex;
+    flex-direction: column;
+}
+
+.dividida__image {
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/honolulu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.dividida__texto {
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(28, 63, 83);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer__link {
+    width: 200px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.footer__link a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 992px) {
+    header {
+        position: absolute;
+        top:0px;
+        left:0px;
+        z-index: 10;
+        width: 100%;
+    }
+    .carousel__alto {
+        display: block;
+    }
+    .section__carousel__color {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(46, 46, 54, 0.4);
+    }
+    .section__texto {
+        position: absolute;
+        width: 820px;
+        bottom: 65px;
+        right: 20px;
+        text-align: right;
+        background: none;
+        color: white;
+    }
+
+    .tarjetas {
+        flex-direction: row;
+    }
+
+    .dividida {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dividida__image {
+        width: 50%;
+        height: 400px;
+        background-image: url('../img/honolulu.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    
+    .dividida__texto {
+        width: 50%;
+    }
+
+    footer {
+        background-color: rgb(28, 63, 83);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__link {
+        width: 100px;
+        margin: 20px;
+        padding: 5px;
+    }
+}
+
