@@ -91,7 +91,7 @@ footer {
     .section__texto {
         position: absolute;
         width: 820px;
-        bottom: 65px;
+        top: 350px;
         right: 20px;
         text-align: right;
         background: none;
