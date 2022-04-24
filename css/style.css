@@ -60,6 +60,8 @@ header {
 }
 
 .card {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
     transition: transform .2s;
 }
 .card:hover {
