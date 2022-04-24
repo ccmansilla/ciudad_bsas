@@ -16,6 +16,26 @@ header {
     text-decoration: underline;
 }
 
+.comprar_color {
+    animation: comprar_color 1s infinite;
+}
+
+@keyframes comprar_color {
+    0% {color: lime;} 
+    100% {color: #198754;}
+}
+
+.comprar_bg {
+    color: white;
+    animation: comprar_bg 1s infinite;
+}
+
+@keyframes comprar_bg {
+    0% {background-color: #198754;}
+    50% {background-color: #198754;}
+    100% {background-color: lime;}
+}
+
 .carousel__alto {
     display: none;
 }
@@ -28,6 +48,8 @@ header {
     position: static;
     width: 100%;
     padding: 20px;
+    font-weight: bold;
+    font-size: larger;
     text-align: left;
     background-color: gray;
     color: white;
