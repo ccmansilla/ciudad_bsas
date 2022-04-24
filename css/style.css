@@ -37,6 +37,13 @@ header {
     flex-direction: column;
 }
 
+.card {
+    transition: transform .2s;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
 .dividida {
     display: flex;
     flex-direction: column;
