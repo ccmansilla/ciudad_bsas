@@ -21,7 +21,7 @@ header {
 }
 
 @keyframes comprar_color {
-    0% {color: lime;} 
+    0% {color: limegreen;} 
     100% {color: #198754;}
 }
 
@@ -33,7 +33,7 @@ header {
 @keyframes comprar_bg {
     0% {background-color: #198754;}
     50% {background-color: #198754;}
-    100% {background-color: lime;}
+    100% {background-color: limegreen;}
 }
 
 .carousel__alto {
