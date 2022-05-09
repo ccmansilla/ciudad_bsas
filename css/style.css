@@ -127,6 +127,10 @@ footer {
     font-weight: bold;
 }
 
+.formulario {
+    width: 100%;
+}
+
 .footer__link a:hover {
     font-weight: bold;
     text-decoration: underline;
@@ -178,6 +182,10 @@ footer {
         width: 100px;
         margin: 20px;
         padding: 5px;
+    }
+
+    .formulario {
+        width: 50%;
     }
 }
 
