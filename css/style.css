@@ -118,6 +118,15 @@ footer {
     color: white;
 }
 
+.tickets__description {
+    color: gray;
+    font-size: small;
+}
+
+.tickets__porcent {
+    font-weight: bold;
+}
+
 .footer__link a:hover {
     font-weight: bold;
     text-decoration: underline;
