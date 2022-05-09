@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+    <title>Conf Bs As</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark pe-5">
+        <a class="navbar-brand" href="#"><img src="img/codoacodo.png" class="header__nav__logo" alt="logo codoacodo" loading="lazy"> Conf Bs As</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav d-flex justify-content-end w-100">
+            <div class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html#conferencia">La conferencia</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="index.html#oradores">Los Oradores</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="index.html#lugar">El lugar y la fecha</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="index.html#form-orador">Conviértete en orador</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link comprar_color" href="tickets.html">Comprar tickets</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid mt-5 p-0 pt-5">
+      <section id="tickets" class="container w-50 mt-5">
+        <div class="row text-center">
+          <div class="col border border-primary p-3">
+            <h3>Estudiante</h3>
+            <p>Tiene un descuento</p>
+            <span>80%</span>
+            <p>* presentar documentacion</p>
+          </div>
+          <div class="col border border-primary mx-1 p-3">
+            <h3>Trainee</h3>
+            <p>Tiene un descuento</p>
+            <span>50%</span>
+            <p>* presentar documentacion</p>
+          </div>
+          <div class="col border border-primary p-3">
+            <h3>Junior</h3>
+            <p>Tiene un descuento</p>
+            <span>15%</span>
+            <p>* presentar documentacion</p>
+          </div>
+        </div>
+        <p class="text-secondary text-center">VENTA</p>
+        <h1 class="text-center">VALOR DE TICKET $200</h1>
+        <div class="row mb-3">
+          <input type="text" class="col form-control me-3" name="nombre" id="nombre" placeholder="Nombre">
+          <input type="text" class="col form-control ms-3" name="apellido" id="apellido" placeholder="Apellido">
+        </div>
+        <div class="row mb-1">
+          <input type="email" class="col form-control" name="correo" id="" placeholder="Correo">
+        </div>
+        <div class="row mb-3 p-0">
+          <div class="col me-3 p-0">
+            <label for="cantidad">Cantidad</label>
+            <input type="text" class="form-control" name="cantidad" id="cantidad" placeholder="Cantidad">
+          </div>
+          <div class="col ms-3 p-0">
+          <label for="categoria">Categoria</label>
+          <select class="form-select" id="categoria" name="categoria" aria-label="Default select example">
+            <option value="1" selected>Estudiante</option>
+            <option value="2">Trainee</option>
+            <option value="3">Junior</option>
+          </select>
+          </div>
+        </div>
+        <div class="alert alert-primary row" role="alert">
+          Total a Pagar: $
+        </div>
+        <div class="row mb-3">
+          <input type="button" class="col btn btn-success me-3" value="Borrar">
+          <input type="button" class="col btn btn-success ms-3" value="Resumen">
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__link"><a href="">Preguntas frecuentes</a></div>
+      <div class="footer__link"><a href="">Contáctenos</a></div>
+      <div class="footer__link"><a href="">Prensa</a></div>
+      <div class="footer__link"><a href="">Conferencias</a></div>
+      <div class="footer__link"><a href="">Términos y condiciones</a></div>
+      <div class="footer__link"><a href="">Privacidad</a></div>
+      <div class="footer__link"><a href="">Estudiantes</a></div>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
