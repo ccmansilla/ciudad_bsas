@@ -37,25 +37,21 @@ function calcularTotal(){
 
     //validaciones de los valores
     if(nombre.value === ""){
-        //alert('Debe ingresar un nombre');
         nombre.classList.add('is-invalid');
         return;
     } 
 
     if(apellido.value === ""){
-        //alert('Debe ingresar un apellido');
         apellido.classList.add('is-invalid');
         return;
     } 
 
     if(correo.value === "" || !validateEmail(correo.value)){
-        //alert('Debe ingresar un correo valido');
         correo.classList.add('is-invalid');
         return;
     } 
 
     if(cantidad.value === ""){
-        //alert('Debe ingresar una cantidad');
         cantidad.classList.add('is-invalid');
         return;
     } 
