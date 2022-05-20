@@ -14,9 +14,46 @@ let cantidad = document.getElementById('cantidad');
 let categoria = document.getElementById('categoria');
 let total = document.getElementById('total');
 let resumen = document.getElementById('resumen');
+let reset = document.getElementById('reset');
+
+//Funcion para quitar el estilo error de las entradas del formulario
+function quitarClaseError(){
+    let elementos = document.querySelectorAll(".is-invalid");
+    for (let index = 0; index < elementos.length; index++) {
+        elementos[index].classList.remove("is-invalid");
+    }
+}
 
 //Calcular el total a pagar
-function total_a_pagar(){    
+function calcularTotal(){    
+
+    quitarClaseError();
+
+    //validaciones de los valores
+    if(nombre.value === ""){
+        alert('Debe ingresar un nombre');
+        nombre.classList.add('is-invalid');
+        return;
+    } 
+
+    if(apellido.value === ""){
+        alert('Debe ingresar un apellido');
+        apellido.classList.add('is-invalid');
+        return;
+    } 
+
+    if(correo.value === ""){
+        alert('Debe ingresar un correo');
+        correo.classList.add('is-invalid');
+        return;
+    } 
+
+    if(cantidad.value === ""){
+        alert('Debe ingresar una cantidad');
+        cantidad.classList.add('is-invalid');
+        return;
+    } 
+
     let cant = Number(cantidad.value);
     let cat = categoria.value;
     let descuento = 0;
@@ -30,12 +67,12 @@ function total_a_pagar(){
         case '3':
             descuento = descJunior;
             break;
-        default:
-            break;
     }
 
     let calculo = ticket * cant * ((100 - descuento)/100);
     total.innerHTML = calculo;
 }
 
-resumen.addEventListener('click', total_a_pagar);
+resumen.addEventListener('click', calcularTotal);
+
+reset.addEventListener('click', quitarClaseError);
