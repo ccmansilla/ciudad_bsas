@@ -41,8 +41,8 @@
     </header>
     <main class="container-fluid mt-5 p-0 pt-5">
       <section id="tickets" class="container formulario mt-5">
-        <form action="">
-        <div class="row text-center">
+        <form action="" method="post">
+        <div class="row mx-0 text-center">
           <div class="col border border-primary mx-1 p-3">
             <h3>Estudiante</h3>
             <p>Tiene un descuento</p>
@@ -64,33 +64,34 @@
         </div>
         <p class="text-secondary text-center">VENTA</p>
         <h1 class="text-center">VALOR DE TICKET $200</h1>
-        <div class="row mb-3">
-          <input type="text" class="col form-control me-3" name="nombre" id="nombre" placeholder="Nombre">
-          <input type="text" class="col form-control ms-3" name="apellido" id="apellido" placeholder="Apellido">
+        <div class="row mx-0 mb-3">
+          <input type="text" class="col form-control me-3" name="nombre" id="nombre" placeholder="Nombre" required>
+          <input type="text" class="col form-control ms-3" name="apellido" id="apellido" placeholder="Apellido" required>
         </div>
-        <div class="row mb-1">
-          <input type="email" class="col form-control" name="correo" id="" placeholder="Correo">
+        <div class="row mx-0 mb-1">
+          <input type="email" class="col form-control" name="correo" id="" placeholder="Correo" required>
         </div>
-        <div class="row mb-3 p-0">
+        <div class="row mx-0 mb-3 p-0">
           <div class="col me-3 p-0">
             <label for="cantidad">Cantidad</label>
-            <input type="text" class="form-control" name="cantidad" id="cantidad" placeholder="Cantidad">
+            <input type="text" class="form-control" name="cantidad" id="cantidad" placeholder="Cantidad" required>
           </div>
           <div class="col ms-3 p-0">
           <label for="categoria">Categoria</label>
           <select class="form-select" id="categoria" name="categoria" aria-label="Default select example">
-            <option value="1" selected>Estudiante</option>
+            <option value="0"></option>
+            <option value="1">Estudiante</option>
             <option value="2">Trainee</option>
             <option value="3">Junior</option>
           </select>
           </div>
         </div>
-        <div class="alert alert-primary row" role="alert">
-          Total a Pagar: $
+        <div class="alert alert-primary" role="alert">
+          Total a Pagar: $<span id="total"></span>
         </div>
-        <div class="row mb-3">
-          <input type="button" class="col btn btn-success me-3" value="Borrar">
-          <input type="button" class="col btn btn-success ms-3" value="Resumen">
+        <div class="row mx-0 mb-3">
+          <input type="reset" class="col btn btn-success me-3" value="Borrar">
+          <input type="button" id="resumen" class="col btn btn-success ms-3" value="Resumen">
         </div>
         </form>
       </section>
@@ -106,6 +107,6 @@
     </footer>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
