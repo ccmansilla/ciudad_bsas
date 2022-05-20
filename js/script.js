@@ -24,6 +24,12 @@ function quitarClaseError(){
     }
 }
 
+//Validar email
+function validateEmail(email) {
+    const res = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return res.test(String(email).toLowerCase());
+}
+
 //Calcular el total a pagar
 function calcularTotal(){    
 
@@ -42,8 +48,8 @@ function calcularTotal(){
         return;
     } 
 
-    if(correo.value === ""){
-        alert('Debe ingresar un correo');
+    if(correo.value === "" || !validateEmail(correo.value)){
+        alert('Debe ingresar un correo valido');
         correo.classList.add('is-invalid');
         return;
     } 
