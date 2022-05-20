@@ -75,6 +75,11 @@ function calcularTotal(){
     total.innerHTML = calculo;
 }
 
+function resetear(){
+    quitarClaseError();
+    total.innerHTML = '';
+}
+
 resumen.addEventListener('click', calcularTotal);
 
-reset.addEventListener('click', quitarClaseError);
+reset.addEventListener('click', resetear);
